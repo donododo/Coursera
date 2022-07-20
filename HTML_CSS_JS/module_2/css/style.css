@@ -1,0 +1,81 @@
+/* Common style */
+*{
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 1.75em;
+}
+
+h2{
+    margin:-1px;
+    float: right;
+    border: 1px solid black;
+    text-align: center;
+    width: 150px;
+    font-size: 1.25em;
+}
+
+div{
+    width: 100%;
+}
+
+.chicken > h2
+{
+    background-color: lightyellow;
+}
+
+.beef > h2
+{
+    background-color: lightcoral;
+}
+
+.sushi > h2
+{
+    background-color: lightblue;
+}
+
+section
+{
+    position: relative;
+    float: left;
+    background-color: lightgray;
+    border: 1px solid black;
+    margin: 1%;
+}
+
+p
+{
+    margin: 0;
+    clear: both;
+    padding: 15px;
+}
+
+
+/* media querys */
+
+@media (min-width: 992px) {
+    section
+    {
+        width: 31%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    section.chicken, section.beef
+    {
+        width: 48%;
+    }
+}
+
+@media (max-width: 767px) {
+    section
+    {
+        width: 100%;
+    }
+}
